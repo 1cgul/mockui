@@ -7,6 +7,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #353536;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mockui.CreateAccountController">
@@ -31,15 +32,33 @@
           </Menu>
         </menus>
       </MenuBar>
-      <Button layoutX="6.0" layoutY="30.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="174.0" style="-fx-background-color: #3a75e9;" text="SmartStacks" textFill="WHITE">
-         <font>
-            <Font name="Arial Black" size="20.0" />
-         </font>
-      </Button>
-      <TableView layoutX="6.0" layoutY="88.0" prefHeight="506.0" prefWidth="174.0">
-        <columns>
-          <TableColumn prefWidth="173.0" text="Study Stacks" />
-        </columns>
-      </TableView>
+      <VBox layoutX="8.0" layoutY="28.0" prefHeight="578.0" prefWidth="206.0" spacing="8.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="224.0" style="-fx-background-color: #3a75e9;" text="SmartStacks" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Button>
+            <TableView prefHeight="500.0" prefWidth="100.0">
+              <columns>
+                <TableColumn editable="false" prefWidth="205.0" text="Study Stacks" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <VBox layoutX="377.0" layoutY="101.0" prefHeight="399.0" prefWidth="247.0" spacing="100.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="248.0" style="-fx-background-color: #3a75e9;" text="Create New Stack" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="248.0" style="-fx-background-color: #3a75e9;" text="Edit Stack" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
